@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistência Gamer ZitraS - Sua Assistência Técnica de Confiança</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><i class="fas fa-gamepad"></i> ZitraS</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Assistência Gamer ZitraS</h1>
+                <p>Sua assistência técnica especializada em games e tecnologia</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn primary">Nossos Serviços</a>
+                    <a href="#contato" class="btn secondary">Fale Conosco</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Clientes Satisfeitos</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-tools"></i>
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Reparos Realizados</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Avaliação Média</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>A ZitraS é uma empresa especializada em assistência técnica de videogames e produtos eletrônicos, com mais de 10 anos de experiência no mercado.</p>
+                    <p>Nossa equipe é formada por profissionais altamente qualificados e apaixonados por tecnologia, prontos para oferecer o melhor serviço para nossos clientes.</p>
+                    <div class="sobre-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantia em todos os serviços</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Atendimento rápido</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Equipe certificada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1057&q=80" alt="Técnico trabalhando">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Desbloqueio de Videogames</h3>
+                    <p class="service-description">Desbloqueio seguro e garantido para seu console</p>
+                    <p class="service-price">R$ 150,00</p>
+                    <ul class="service-features">
+                        <li>Garantia de 3 meses</li>
+                        <li>Suporte pós-serviço</li>
+                        <li>Backup de dados</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Desbloqueio de Videogames', 150)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brush"></i>
+                    <h3>Limpeza de Videogames</h3>
+                    <p class="service-description">Limpeza completa interna e externa</p>
+                    <p class="service-price">R$ 100,00</p>
+                    <ul class="service-features">
+                        <li>Pasta térmica incluída</li>
+                        <li>Higienização completa</li>
+                        <li>Teste de funcionamento</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Limpeza de Videogames', 100)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Limpeza de Computadores</h3>
+                    <p class="service-description">Manutenção preventiva completa</p>
+                    <p class="service-price">R$ 120,00</p>
+                    <ul class="service-features">
+                        <li>Limpeza de coolers</li>
+                        <li>Organização de cabos</li>
+                        <li>Otimização de sistema</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Limpeza de Computadores', 120)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-temperature-high"></i>
+                    <h3>Troca de Pasta Térmica</h3>
+                    <p class="service-description">Pasta térmica de alta qualidade</p>
+                    <p class="service-price">R$ 80,00</p>
+                    <ul class="service-features">
+                        <li>Pasta importada</li>
+                        <li>Aplicação profissional</li>
+                        <li>Garantia de 6 meses</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Troca de Pasta Térmica', 80)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Troca de Display</h3>
+                    <p class="service-description">Displays originais com garantia</p>
+                    <p class="service-price">R$ 200,00</p>
+                    <ul class="service-features">
+                        <li>Peças originais</li>
+                        <li>Garantia de 1 ano</li>
+                        <li>Serviço em 24h</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Troca de Display', 200)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Gravação em Pen-drive</h3>
+                    <p class="service-description">Músicas e playlists personalizadas</p>
+                    <p class="service-price">R$ 30,00</p>
+                    <ul class="service-features">
+                        <li>Formato de sua escolha</li>
+                        <li>Organização por pasta</li>
+                        <li>Serviço expresso</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Gravação em Pen-drive', 30)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div id="carrinho" class="carrinho">
+                <h3><i class="fas fa-shopping-cart"></i> Seu Carrinho</h3>
+                <ul id="itens-carrinho"></ul>
+                <div class="carrinho-total">
+                    <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+                    <button onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos dos Clientes</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Cliente 1">
+                        <div class="depoimento-info">
+                            <h4>Carlos Silva</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Excelente serviço! Consertaram meu PS4 em menos de 24 horas. Super recomendo!"</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Cliente 2">
+                        <div class="depoimento-info">
+                            <h4>Ana Paula</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Ótimo atendimento e preço justo. Resolveram o problema do meu notebook rapidamente."</p>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-header">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Cliente 3">
+                        <div class="depoimento-info">
+                            <h4>Pedro Santos</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Profissionais muito competentes. Fizeram a troca da tela do meu celular com muita qualidade."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@zitras.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sábado: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://instagram.com/zitras" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="mailto:contato@zitras.com" class="social-btn email">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </a>
+                </div>
+                <form id="contato-form" class="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="localizacao">
+            <h2>Nossa Localização</h2>
+            <div class="localizacao-container">
+                <div class="endereco-info">
+                    <h3>Endereço</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo, SP</p>
+                    <p><i class="fas fa-subway"></i> Próximo ao metrô Consolação</p>
+                    <p><i class="fas fa-parking"></i> Estacionamento no local</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1598462773166!2d-46.6549378!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x63b9f0e3703cb8b4!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1659942944086!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre a ZitraS</h3>
+                <p>Especialistas em assistência técnica de games e tecnologia, oferecendo serviços de qualidade desde 2013.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Desenvolvedor</h3>
+                <div class="creator-info">
+                    <p>João Silva</p>
+                    <p>Desenvolvedor Web Full Stack</p>
+                    <div class="creator-social">
+                        <a href="mailto:joao@exemplo.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/joaosilva" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/joaosilva" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Assistência Gamer ZitraS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="whatsapp-button">
+        <a href="https://wa.me/5511999999999" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
